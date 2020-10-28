@@ -22,12 +22,13 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def action_guardar_archivo(self):
-        QFileDialog.getSaveFileName(
+        ubicacion = QFileDialog.getSaveFileName(
             self,
             'Guardar Archivo',
             '.',
             'JSON (*.json)'
-        )
+        )[0]
+        print (ubicacion)
 
     @Slot()
     def click_mostrar(self):
