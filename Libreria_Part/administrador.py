@@ -19,6 +19,9 @@ class Administrador:
             str(particula) + '\n' for particula in self.__particulas
         )
 
+    def guardar (self, ubicacion):
+        with open(ubicacion, 'w') as archivo:
+            archivo.write(str(self))
 
 #l01 = Particula(id="2306", origen_x="34", origen_y="47", destino_x="90", destino_y="23", velocidad="80", red="90",  green="2", blue="34", distancia="")
 #l02 = Particula(id="2940", origen_x="0", origen_y="0", destino_x="0", destino_y="0", velocidad="0", red="100",  green="200", blue="300", distancia="0")
