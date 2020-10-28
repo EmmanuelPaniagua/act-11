@@ -29,6 +29,7 @@ class MainWindow(QMainWindow):
             'JSON (*.json)'
         )[0]
         print (ubicacion)
+        self.administrador.guardar(ubicacion)
 
     @Slot()
     def click_mostrar(self):
