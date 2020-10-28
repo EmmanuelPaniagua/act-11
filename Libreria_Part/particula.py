@@ -15,27 +15,27 @@ class Particula:
 
     def __str__(self):
         return (
-            'Id:  ' + str(self.__id) + '\n' +
-            'Origen x:  ' + str(self.__origen_x) + '\n' +
-            'Origen y:  ' + str(self.__origen_y) + '\n' +
-            'Destino x:  ' + str(self.__destino_x) + '\n' +
-            'Destino y:  ' + str(self.__destino_y) + '\n' +
-            'Velocidad:  ' + str(self.__velocidad) + '\n' +
-            'Red:  ' + str(self.__red) + '\n' +
-            'Green:  ' + str(self.__green) + '\n' +
-            'Blue:  ' + str(self.__blue) + '\n' +
-            'Distancia:  ' + str(self.__distancia) + '\n'
+            'id:  ' + str(self.__id) + '\n' +
+            'origen_x:  ' + str(self.__origen_x) + '\n' +
+            'origen_y:  ' + str(self.__origen_y) + '\n' +
+            'destino_x:  ' + str(self.__destino_x) + '\n' +
+            'destino_y:  ' + str(self.__destino_y) + '\n' +
+            'velocidad:  ' + str(self.__velocidad) + '\n' +
+            'red:  ' + str(self.__red) + '\n' +
+            'green:  ' + str(self.__green) + '\n' +
+            'blue:  ' + str(self.__blue) + '\n' +
+            'distancia:  ' + str(self.__distancia) + '\n'
         )
 
     def to_dict(self):
         return {
-            "Id": self.__id,
-            "Origen x": self.__origen_x,
-            "Origen y": self.__origen_y,
-            "Destino x": self.__destino_x,
-            "Destino y": self.__destino_y,
-            "Velocidad": self.__velocidad,
-            "Red": self.__red,
-            "Green": self.__green,
-            "Blue": self.__blue
+            "id": self.__id,
+            "origen_x": self.__origen_x,
+            "origen_y": self.__origen_y,
+            "destino_x": self.__destino_x,
+            "destino_y": self.__destino_y,
+            "velocidad": self.__velocidad,
+            "red": self.__red,
+            "green": self.__green,
+            "blue": self.__blue
         }
